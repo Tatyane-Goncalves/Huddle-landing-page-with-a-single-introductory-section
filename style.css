@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --softmagenta: hsl(300, 69%, 71%);
+
+    --poppins: 'Poppins', sans-serif;
+    --opensans: 'Open Sans', sans-serif;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    max-width: 1200px;
+    min-width: 375px;
+    background-color: var(--violet);
+    background-image: url('/images/bg-desktop.svg');
+}
+
+
+header{
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+header img{
+    width: 15%;
+}
+
+/* MAIN */
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.main-img{
+    width: 100%;
+}
+
+.main-img img{
+    width: 100%;
+}
+
+
+.main-text{
+    padding-left: 130px;
+}
+
+.main-text h2{
+    color: white;
+    font-family: var(--poppins);
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.main-text p{
+    color: white;
+    font-family: var(--opensans);
+    font-weight: 400;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.main-text button{
+    width: 120px;
+    height: 35px;
+    border-radius: 55px;
+    border: none;
+    font-family: var(--poppins);
+    font-weight: 400;
+    color: var(--violet);
+    background-color: white;
+    box-shadow: 2px 2px 2px 3px rgba(15, 9, 9, 0.2);
+    cursor: pointer;
+}
+
+.main-text button:hover{
+    background-color: var(--softmagenta);
+    color: white;
+}
+
+
+/* FOOTER */
+.social-media{
+    padding-top: 35px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.social-media i{
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.social-media i:hover{
+    color: var(--softmagenta);
+}
+
+.attribution{
+    padding-top: 35px;
+    font-size: 11px;
+    text-align: center;
+    font-family: var(--opensans);
+}
+
+.attribution a{
+    color: white;
+}
